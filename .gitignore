@@ -1,5 +1,6 @@
 #
-# NOTE! Don't add files that are generated in specific
+# NOTE! Don't add f
+iles that are generated in specific
 # subdirectories here. Add them in the ".gitignore" file
 # in that subdirectory instead.
 #
@@ -18,7 +19,6 @@
 *.so
 *.so.dbg
 *.mod.c
-*.i
 *.lst
 *.symtypes
 *.order
@@ -99,14 +99,6 @@ ID
 *~
 \#*#
 
-#
-# Leavings from module signing
-#
-extra_certificates
-signing_key.pem
-signing_key.priv
-signing_key.x509
-x509.genkey
 
 # Kconfig presets
 all.config
@@ -116,3 +108,12 @@ all.config
 
 # fetched Android config fragments
 android/configs/android-*.cfg
+
+# Ignore folder named 'output'
+output/
+android/configs/android-*.cfg	
+anykernel/	
+ccache_drg/	
+out/	
+build.sh	
+logcat.txt
