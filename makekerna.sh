@@ -13,7 +13,7 @@ clear
 make clean
 make mrproper
 mkdir output
-make -C $(pwd) O=output B2N_defconfig
+make -C $(pwd) O=output drg_defconfig
 make -j6 -C $(pwd) O=output
 cp -r output/arch/arm64/boot/Image.gz-dtb /home/derflacco/BOOTIMAGES
 
