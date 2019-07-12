@@ -8,7 +8,7 @@ echo "--------------------------------------------"
 
 rm -r output
 export ARCH=arm64
-export CROSS_COMPILE=/home/derflacco/gcc-linaro-5.5.0-2017.10-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-
+export CROSS_COMPILE=/home/derflacco/aarch64-elf-gcc-master/bin/aarch64-elf-
 clear
 make clean
 make mrproper
